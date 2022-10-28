@@ -1,6 +1,6 @@
 .header {
-  background-color: $bg-header;
-  color: $c-header;
+  background-color: $bg-secondary;
+  color: $c-secondary;
   font-size: calc(10px + 2vmin);
   height: 100px;
 
@@ -13,8 +13,8 @@
 }
 
 .header-button {
-  background: $bg-header-button;
-  border: 2px solid $br-header-button;
+  background: $bg-secondary;
+  border: 2px solid $border-secondary;
   border-radius: 4px;
   color: #afafaf;
   font-weight: 600;

@@ -1,8 +1,9 @@
+// libraries
 import * as Yup from 'yup';
 import moment from 'moment';
 // constants
 import {
-  PHONE_REGEXP, PASSPORT_REGEXP, ONLY_LATIN_REGEXP, Registration, MAX_AGE, MIN_AGE,
+  PHONE_REGEXP, PASSPORT_REGEXP, ONLY_LATIN_REGEXP, Registration, MAX_AGE, MIN_AGE, PASSWORD_REGEXP,
 } from 'constants/index';
 import { REGISTER_YAP_ERRORS } from 'constants/registerYupErrors';
 
@@ -12,24 +13,34 @@ const checkAge = ({ day, month, year } : { day: number, month: number, year: num
   return (difference < MAX_AGE) && (difference > MIN_AGE);
 };
 
-const firstName = {
+const passwordOptions = {
+  length: 12,
+};
+const firstNameOptions = {
   minLength: 2,
   maxLength: 30,
 };
-const lastName = {
+const lastNameOptions = {
   minLength: 2,
   maxLength: 30,
 };
 
-export const SignupSchema = Yup.object().shape({
+export const signupSchema = Yup.object().shape({
+  email: Yup.string().trim().email().required(REGISTER_YAP_ERRORS.required),
+  password: Yup.string().trim()
+    .min(passwordOptions.length, REGISTER_YAP_ERRORS.passwordLength)
+    .matches(PASSWORD_REGEXP, REGISTER_YAP_ERRORS.passwordMessage)
+    .required(REGISTER_YAP_ERRORS.required),
+  repeatedPassword: Yup.string().trim()
+    .test('isValid', REGISTER_YAP_ERRORS.repeatPassword, (value, textContent) => textContent.parent.password === value),
   firstName: Yup.string().trim()
-    .min(firstName.minLength, REGISTER_YAP_ERRORS.tooShort)
-    .max(firstName.maxLength, REGISTER_YAP_ERRORS.tooLong)
+    .min(firstNameOptions.minLength, REGISTER_YAP_ERRORS.tooShort)
+    .max(firstNameOptions.maxLength, REGISTER_YAP_ERRORS.tooLong)
     .matches(ONLY_LATIN_REGEXP, REGISTER_YAP_ERRORS.onlyLatinLetters)
     .required(REGISTER_YAP_ERRORS.required),
   lastName: Yup.string().trim()
-    .min(lastName.minLength, REGISTER_YAP_ERRORS.tooShort)
-    .max(lastName.maxLength, REGISTER_YAP_ERRORS.tooLong)
+    .min(lastNameOptions.minLength, REGISTER_YAP_ERRORS.tooShort)
+    .max(lastNameOptions.maxLength, REGISTER_YAP_ERRORS.tooLong)
     .matches(ONLY_LATIN_REGEXP, REGISTER_YAP_ERRORS.onlyLatinLetters)
     .required(REGISTER_YAP_ERRORS.required),
   passport: Yup.string().trim()
@@ -60,6 +71,9 @@ export const SignupSchema = Yup.object().shape({
 });
 
 export const initialValues:Registration = {
+  email: '',
+  password: '',
+  repeatedPassword: '',
   passport: '',
   firstName: '',
   lastName: '',

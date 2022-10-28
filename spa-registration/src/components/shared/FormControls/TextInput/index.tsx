@@ -11,10 +11,11 @@ type CustomInputProps = {
   placeholder?: string,
   isError?: boolean,
   mask? :string,
+  type?: string,
 };
 
 const FormControlTextInput = ({
-  name, labelText, isError, placeholder, mask,
+  name, labelText, isError, placeholder, mask, type,
 }:CustomInputProps) => {
   const insertField = mask
     ? (
@@ -29,7 +30,7 @@ const FormControlTextInput = ({
         )}
       </Field>
     )
-    : <Field className="form-input" id={name} name={name} placeholder={placeholder} />;
+    : <Field className="form-input" id={name} name={name} placeholder={placeholder} type={type} />;
 
   return (
     <>

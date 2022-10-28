@@ -1,0 +1,25 @@
+%button {
+  color: $c-secondary;
+  font-family: Quicksand, sans-serif;
+  margin-bottom: 15px;
+  padding: 12px;
+  transition: 0.2s;
+  font-weight: 600;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.green-button {
+  @extend %button;
+
+  background: $bg-primary;
+}
+
+.orange-button {
+  @extend %button;
+
+  background: $bg-tertiary;
+  padding: 15px;
+}

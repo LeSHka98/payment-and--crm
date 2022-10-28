@@ -1,34 +1,36 @@
+// libraries
 import React from 'react';
-// styles
-import 'styles/index.scss';
+import { Route, Routes } from 'react-router-dom';
 // components
-import Header from 'components/layout/Header';
-import BreadCrumbs from 'components/shared/BreadCrumbs';
-import RegistrationForm from 'components/RegistrationForm';
-import InfoBlock from 'components/shared/InfoBlock';
-import Footer from 'components/layout/Footer';
-import ImagesBlock from 'components/shared/ImagesBlock';
-// constants
-import { breadCrumbs } from 'constants/index';
+import RegistrationPage from 'components/Registration/RegistrationPage';
+import ErrorPage from 'components/layout/Pages/ErrorPage';
+import NotFound from 'components/layout/Pages/NotFound';
+import LoginPage from 'components/Login/LoginPage';
+import UserInfoPage from 'components/UserInfo/UserInfoPage';
 
-const App = () => (
-  <div className="App">
-    <Header />
-    <main className="main">
-      <BreadCrumbs elements={breadCrumbs} />
-      <div className="main-block container-main">
-        <div className="main-block-left">
-          <RegistrationForm />
-        </div>
-        <div className="main-block-right">
-          <InfoBlock />
-        </div>
-      </div>
-      <ImagesBlock />
-      <div className="cookies">Cookie settings</div>
-    </main>
-    <Footer />
-  </div>
+const Router = () => (
+  <Routes>
+    <Route
+      element={<RegistrationPage />}
+      errorElement={<ErrorPage />}
+      path="/registration"
+    />
+    <Route
+      element={<LoginPage />}
+      errorElement={<ErrorPage />}
+      path="/"
+    />
+    <Route
+      element={<UserInfoPage />}
+      errorElement={<ErrorPage />}
+      path="/user"
+    />
+    <Route
+      element={<NotFound />}
+      errorElement={<ErrorPage />}
+      path="*"
+    />
+  </Routes>
 );
 
-export default App;
+export default Router;

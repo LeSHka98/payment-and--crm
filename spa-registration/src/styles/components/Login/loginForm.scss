@@ -1,0 +1,28 @@
+.login-form {
+  background: $bg-secondary;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px $shadow-tertiary;
+  left: 0;
+  margin: auto;
+  padding: 60px 60px 30px;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 420px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 30px 30px 15px;
+  }
+}
+
+.login-link {
+  color: $c-tertiary;
+  display: block;
+  margin: 20px auto 10px;
+  text-align: center;
+  text-decoration-line: underline;
+}

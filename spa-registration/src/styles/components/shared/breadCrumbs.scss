@@ -1,13 +1,13 @@
 .bread-crumbs {
-  background: $bg-bread-crumbs;
+  background: $bg-secondary;
   display: flex;
   gap: 3px;
   justify-content: space-between;
 }
 
 .crumb {
-  border-bottom: 9px solid $br-bread-crumbs;
-  color: $c-bread-crumb;
+  border-bottom: 9px solid $border-tertiary;
+  color: $c-tertiary;
   cursor: pointer;
   display: flex;
   flex-grow: 1;

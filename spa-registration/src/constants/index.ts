@@ -4,6 +4,8 @@ export const PHONE_REGEXP = /^(\+375|80)\((29|25|44|33)\)(\d{3})-(\d{2})-(\d{2})
 
 export const ONLY_LATIN_REGEXP = /^[a-zA-Z]+$/;
 
+export const PASSWORD_REGEXP = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{12,}$/gm;
+
 export const breadCrumbs = [
   'PERSONAL INFORMATION',
   'TELL US ABOUT YOU',
@@ -13,6 +15,9 @@ export const breadCrumbs = [
 ];
 
 export type Registration = {
+  email: string,
+  password: string,
+  repeatedPassword: string,
   passport: string,
   firstName: string,
   lastName: string,
@@ -29,3 +34,8 @@ export type Registration = {
 export const MAX_AGE = 90;
 
 export const MIN_AGE = 18;
+
+export type Login = {
+  email: string,
+  password: string,
+};

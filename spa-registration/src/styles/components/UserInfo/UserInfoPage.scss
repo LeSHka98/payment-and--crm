@@ -1,0 +1,31 @@
+.green-background {
+  background: $bg-primary;
+}
+
+.user-info-page {
+  background: url("/assets/images/Login-background.png") no-repeat bottom;
+  background-size: contain;
+  height: 320px;
+  padding: 60px 0 130px;
+}
+
+.user-info-form {
+  background: $bg-secondary;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px $shadow-tertiary;
+  left: 0;
+  margin: auto;
+  padding: 60px 60px 30px;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 420px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 30px 30px 15px;
+  }
+}

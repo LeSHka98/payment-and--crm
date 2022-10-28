@@ -1,41 +1,41 @@
-// colors
 $white: #fff;
+$gray: #737373;
 $light-green: #9edc15;
 $orange: #ff9d00;
 $red: red;
+
+
+$c-primary: $light-green;
+$c-secondary: $white;
+$c-tertiary: #4c4c4c;
+$c-quaternary: $gray;
+
+
+$bg-primary: $light-green;
+$bg-secondary: $white;
+$bg-tertiary: $orange;
 $bg-main: #f8f8f8;
-$c-cookies-text: $light-green;
 
-// footer
-$bg-footer: $light-green;
-$bg-footer-line: $white;
-$c-footer: $white;
+$shadow-primary: rgba(0, 0, 0, 0.1);
+$shadow-secondary: rgba(0, 0, 0, 0.2);
+$shadow-tertiary: rgba(0, 0, 0, 0.3);
 
-// header
-$bg-header: $white;
-$c-header: $white;
-$bg-header-button: $white;
-$br-header-button: #aaa;
+$border-primary: $light-green;
+$border-secondary: #aaa;
+$border-tertiary: #d8d8d8;
 
-// info-block
-$bg-info-block: $white;
-$box-shadow-info-block: rgb(0 0 0 / 20%);
+// calculator-slider
+$bg-slider: $bg-primary;
+$border-slider: $border-primary;
+$shadow-slider: $light-green;
 
-// form
-$box-shadow-form-input: rgb(0 0 0 / 10%);
-$bg-form-input: $white;
-$c-error: $red;
+// calculator
+$c-calculator-primary: $c-tertiary;
+$c-calculator-secondary: $c-primary;
+$bg-calculator-caption: rgba(158, 220, 21, 0.4);
+$shadow-calculator-block: $shadow-primary;
 
-// buttons
-$bg-form-button-primary: $light-green;
-$bg-form-button-secondary: $orange;
-$c-form-button: $white;
 
-// icons
-$c-info-block-icon: #4c4c4c;
-$c-footer-icon: $white;
-
-// bread-crumbs
-$bg-bread-crumbs: $white;
-$br-bread-crumbs: #d8d8d8;
-$c-bread-crumb: #4c4c4c;
+// payment
+$border-payment-details: #D7D6D6;
+$shadow-payment-card: rgba(0, 0, 0, 0.25);
