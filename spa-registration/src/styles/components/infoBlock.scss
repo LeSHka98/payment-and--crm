@@ -1,0 +1,36 @@
+.info-block {
+  background: $bg-info-block;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px $box-shadow-info-block;
+  height: max-content;
+  margin-top: 25px;
+  padding: 20px;
+  text-align: left;
+
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+
+  .info-block__header {
+    margin-top: 0;
+  }
+}
+
+.contact-block {
+  align-items: center;
+  display: flex;
+  margin: 10px 0;
+
+  .text {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.icon {
+  fill: $c-info-block-icon;
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;
+}

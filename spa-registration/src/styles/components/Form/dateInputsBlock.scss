@@ -1,0 +1,26 @@
+.form-label {
+  @extend %form-label;
+}
+
+.form-birthday-input {
+  @extend %form-input;
+
+  width: 100%;
+}
+
+.birthday-block {
+  display: flex;
+  gap: 1%;
+
+  .birthday-block-day {
+    flex-basis: 24%;
+  }
+
+  .birthday-block-month {
+    flex-basis: 49%;
+  }
+
+  .birthday-block-year {
+    flex-basis: 24%;
+  }
+}

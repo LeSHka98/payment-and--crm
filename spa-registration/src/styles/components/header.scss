@@ -1,0 +1,24 @@
+.header {
+  background-color: $bg-header;
+  color: $c-header;
+  font-size: calc(10px + 2vmin);
+  height: 100px;
+
+  .block {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+  }
+}
+
+.header-button {
+  background: $bg-header-button;
+  border: 2px solid $br-header-button;
+  border-radius: 4px;
+  color: #afafaf;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 10px;
+  width: auto;
+}

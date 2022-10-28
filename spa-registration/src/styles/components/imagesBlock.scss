@@ -1,0 +1,23 @@
+.images {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  @media screen and (max-width: $screen-xs-max) {
+    &:nth-child(2n) {
+      margin: 0 2%;
+    }
+
+    flex-wrap: wrap;
+  }
+
+  .image {
+    justify-self: center;
+    max-width: 100%;
+
+    @media screen and (max-width: $screen-xs-max) {
+      flex-basis: 32%;
+    }
+  }
+}

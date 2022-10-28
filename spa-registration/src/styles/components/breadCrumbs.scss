@@ -1,0 +1,27 @@
+.bread-crumbs {
+  background: $bg-bread-crumbs;
+  display: flex;
+  gap: 3px;
+  justify-content: space-between;
+}
+
+.crumb {
+  border-bottom: 9px solid $br-bread-crumbs;
+  color: $c-bread-crumb;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+
+  @media (max-width: $screen-xs-max) {
+    .crumb-text {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: $screen-xs) {
+    .crumb-text {
+      display: none;
+    }
+  }
+}
