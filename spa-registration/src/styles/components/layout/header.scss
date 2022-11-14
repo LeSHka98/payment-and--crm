@@ -3,10 +3,12 @@
   color: $c-secondary;
   font-size: calc(10px + 2vmin);
   height: 100px;
+  overflow: hidden;
 
   .block {
     align-items: center;
     display: flex;
+    gap: 10%;
     height: inherit;
     justify-content: space-between;
   }
@@ -21,4 +23,39 @@
   height: 40px;
   padding: 0 10px;
   width: auto;
+
+  @media screen and (max-width: $screen-xs-max){
+    display: none;
+  }
+}
+
+
+.burger-btn {
+  display: none;
+
+  @media screen and (max-width: $screen-xs-min){
+    display: block;
+  }
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 1%;
+
+  @media screen and (max-width: $screen-xs-min){
+    display: none;
+  }
+}
+
+
+.header-link {
+  color: $border-secondary;
+  font-size: 17px;
+  text-decoration: none;
+
+  &.active {
+    color: $c-primary;
+  }
 }

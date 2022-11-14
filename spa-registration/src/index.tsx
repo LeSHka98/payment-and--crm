@@ -6,13 +6,16 @@ import { BrowserRouter } from 'react-router-dom';
 import 'index.css';
 // router
 import Router from 'components';
+import AuthProvider from 'hooks/useAuthProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Router />
+      <AuthProvider>
+        <Router />
+      </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>,
 );

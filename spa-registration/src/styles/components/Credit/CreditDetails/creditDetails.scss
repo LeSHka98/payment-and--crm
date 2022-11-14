@@ -1,0 +1,89 @@
+.credit-details-header {
+  font-size: 49px;
+}
+
+.credit-details-block {
+  background: $bg-secondary;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px $shadow-primary;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.credit-details-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+
+  .credit-details-plan {
+    color: $c-quaternary;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .credit-details-amount {
+    color: $c-primary;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .credit-details-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $c-tertiary;
+    font-size: 15px;
+  }
+}
+.credit-details-accordion {
+  color: $c-secondary;
+  background: $bg-primary;
+  padding: 30px 30px 20px;
+
+  table {
+    display: block;
+    tbody {
+      display: block;
+
+      .credit-details-table-row {
+        display: flex;
+        td {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+
+.credit-details-accordion-button {
+  color: $c-secondary;
+  border: none;
+  background: $bg-primary;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto auto;
+
+  .credit-details-arrow {
+    margin-left: 5px;
+
+    &.revert {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.credit-details-to-payment {
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  background: $bg-secondary;
+  box-shadow: 0 1px 3px $shadow-primary;
+  color: $c-tertiary;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}

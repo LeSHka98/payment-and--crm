@@ -23,7 +23,7 @@ const RegistrationForm = () => {
   return (
     <div>
       <h2 className="registration-form-name">Enter your personal data</h2>
-      <Link to="/">
+      <Link to="/login">
         <Button className="green-button button">I&apos;m already registered</Button>
       </Link>
       <Formik

@@ -4,18 +4,30 @@
 @import "shared/infoBlock";
 @import "layout/footer";
 @import "layout/header";
+@import "layout/headerMobileMenu";
 @import "shared/imagesBlock";
-@import "styles/components/Form/FormCommon";
-@import "Registration/AdditionalInfoBlock";
-@import "Registration/RegistrationForm";
+@import "Form/formCommon";
+@import "Registration/additionalInfoBlock";
+@import "Registration/registrationForm";
 @import "Form/textInput";
 @import "Form/dateInputsBlock";
-@import "Form/CheckBoxBlock";
-@import "Form/RadioGroup";
+@import "Form/checkBoxBlock";
+@import "Form/radioGroup";
 @import "Login/loginForm";
 @import "Login/loginPage";
-@import "shared/Button";
-@import "UserInfo/UserInfo";
-@import "UserInfo/UserInfoPage";
+@import "shared/button";
+@import "UserInfo/userInfo";
+@import "UserInfo/userInfoPage";
 @import "layout/Pages/NotFound";
 @import "layout/Pages/ErrorPage";
+@import "Credit/Calculator/calculator";
+@import "Credit/baseLayout";
+@import "Credit/CreditDetails/creditDetails";
+@import "Credit/CreditList/creditList";
+@import "Credit/Paymant/payment";
+
+.router-wait {
+  font-size: 50px;
+  margin-top: 200px;
+  text-align: center;
+}

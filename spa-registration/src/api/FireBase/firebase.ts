@@ -29,7 +29,7 @@ export const logIn = async (values: Login, navigate: NavigateFunction) => {
     alert(e);
   }
   if (isSignInSuccessful) {
-    navigate('/user');
+    navigate('/');
   }
 };
 
@@ -43,7 +43,7 @@ export const logOut = async (navigate: NavigateFunction) => {
     alert(e);
   }
   if (isLogOutSuccessful) {
-    navigate('/');
+    navigate('/login');
   }
 };
 
@@ -52,7 +52,7 @@ const createUser = async (values: Registration) => {
   const documentRef = doc(database, 'users', email);
 
   try {
-    await setDoc(documentRef, { email, mainFields });
+    await setDoc(documentRef, { email, ...mainFields });
   } catch (e) {
     alert(e);
   }
@@ -65,7 +65,7 @@ export const createUserAndRegister = async (values: Registration, navigate: Navi
 
   if (isRegisterSuccessful) {
     await createUser(values);
-    navigate('/user');
+    navigate('/');
   }
 };
 

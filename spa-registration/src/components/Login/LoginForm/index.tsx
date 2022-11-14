@@ -15,15 +15,13 @@ import { Login } from 'constants/index';
 const LoginForm = () => {
   const navigate = useNavigate();
 
-  const signIn = (values: Login) => logIn(values, navigate);
-
   return (
     <div className="login-form">
       <Logo />
       <h3>Log in into your account</h3>
       <Formik
         initialValues={loginInitialValues}
-        onSubmit={signIn}
+        onSubmit={(values: Login) => logIn(values, navigate)}
         validationSchema={loginSchema}
       >
         {() => (

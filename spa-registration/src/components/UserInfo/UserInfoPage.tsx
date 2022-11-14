@@ -23,8 +23,7 @@ const UserInfoPage = () => {
 
         setUser(data);
       } else {
-        console.log('User is not authorized!');
-        navigate('/');
+        navigate('/login');
       }
     });
 
@@ -33,10 +32,6 @@ const UserInfoPage = () => {
     };
   }, [navigate]);
 
-  const logout = () => {
-    logOut(navigate);
-  };
-
   return (
     <>
       <div className="user-info-page">
@@ -44,7 +39,7 @@ const UserInfoPage = () => {
           {user
             ? <UserInfo user={user} />
             : <h1>Loading ...</h1>}
-          <button className="button orange-button" onClick={logout}>LOG OUT</button>
+          <button className="button orange-button" onClick={() => logOut(navigate)}>LOG OUT</button>
         </div>
       </div>
       <div className="green-background">

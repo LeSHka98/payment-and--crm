@@ -14,7 +14,7 @@
     width: 70%;
   }
 
-  @media screen and (max-width: $screen-xs-max) {
+  @media screen and (max-width: $screen-xs-min) {
     padding: 30px 30px 15px;
   }
 }

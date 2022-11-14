@@ -1,0 +1,41 @@
+.header-mobile-menu {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: $bg-secondary;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 30px 20px;
+  transform: translateX(100%);
+  transition: all 0.2s;
+  text-align: right;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+
+.header-mobile-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 20px;
+  border-bottom: 1px solid  $border-secondary;
+  text-align: left;
+
+  .header-mobile-link {
+    color: $c-tertiary;
+    font-size: 17px;
+    padding: 15px 5px;
+    text-decoration: none;
+    border-top: 1px solid  $border-secondary;
+
+    &.active {
+      color: $c-primary;
+    }
+  }
+}
