@@ -1,0 +1,21 @@
+.check-group {
+  display: flex;
+  margin: 10px 0;
+
+  .checkbox {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+  }
+
+  .form-label-check {
+    @extend %form-label;
+
+    display: inline;
+    flex-shrink: 15;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 2px;
+  }
+}

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Nunito-Black;
+  src: url("assets/fonts/Nunito/static/Nunito-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-BlackItalic;
+  src: url("assets/fonts/Nunito/static/Nunito-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url("assets/fonts/Nunito/static/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-BoldItalic;
+  src: url("assets/fonts/Nunito/static/Nunito-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-ExtraBold;
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-ExtraBoldItalic;
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-ExtraLight;
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-ExtraLight;
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-ExtraLightItalic;
+  src: url("assets/fonts/Nunito/static/Nunito-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-Italic;
+  src: url("assets/fonts/Nunito/static/Nunito-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-Light;
+  src: url("assets/fonts/Nunito/static/Nunito-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-LightItalic;
+  src: url("assets/fonts/Nunito/static/Nunito-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-Medium;
+  src: url("assets/fonts/Nunito/static/Nunito-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-MediumItalic;
+  src: url("assets/fonts/Nunito/static/Nunito-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-Regular;
+  src: url("assets/fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url("assets/fonts/Nunito/static/Nunito-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Nunito-SemiBoldItalic;
+  src: url("assets/fonts/Nunito/static/Nunito-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("assets/fonts/Quicksand/static/Quicksand-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Quicksand-Light;
+  src: url("assets/fonts/Quicksand/static/Quicksand-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Quicksand-Medium;
+  src: url("assets/fonts/Quicksand/static/Quicksand-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("assets/fonts/Quicksand/static/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Quicksand-SemiBold;
+  src: url("assets/fonts/Quicksand/static/Quicksand-SemiBold.ttf") format("truetype");
+}
+
+body {
+  font-family: Nunito-Regular, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
+    monospace;
+}
