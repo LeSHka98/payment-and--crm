@@ -1,0 +1,27 @@
+.form {
+  margin-bottom: 25px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-control-buttons {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+
+  .reset {
+    align-items: center;
+    border-color: $br-tertiary;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 7px;
+    width: 80px;
+  }
+}

@@ -1,0 +1,15 @@
+.radio-elem {
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+
+  &__label {
+    margin-right: 2px;
+  }
+}
+
+.radio-group {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,12 @@
+.form-label {
+  @extend %form-label;
+}
+
+.form-input {
+  @extend %form-input;
+
+  @media (max-width: $screen-xs-max) {
+    margin-left: 0;
+    width: 100%;
+  }
+}

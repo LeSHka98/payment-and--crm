@@ -1,0 +1,27 @@
+.table-sort-caption {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .table-sort-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .icon {
+      fill: $bg-secondary;
+      height: 8px;
+      width: 10px;
+    }
+
+    .icon.active {
+      fill: $bg-sort-active;
+    }
+  }
+}
+
+.spinner-placement,
+.error-placement {
+  margin: 20px  calc(50% - 25px) 20px;
+  text-align: center;
+}
