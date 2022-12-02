@@ -1,6 +1,6 @@
 // constants
 import { APPROPRIATE_FIELDS, Entry, FieldForFormat } from 'constants/graphql';
-import { FilterFieldsType } from 'constants/index';
+import { FilterFieldsType } from 'constants/common';
 // helpers
 import { formatTableField } from 'helpers/formatFields';
 

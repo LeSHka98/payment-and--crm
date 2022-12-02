@@ -11,11 +11,11 @@ import { ReactComponent as ArrowDownIcon } from 'assets/images/sort-down.svg';
 import PaginationCRM from 'components/ClientArea/PaginationCRM';
 import TableRow from 'components/ClientArea/Table/Row';
 // constants
-import { Data, Borrower } from 'constants/graphql';
-import { PageParams, SortFieldsType } from 'constants/index';
+import { CrmGatewayQuery, Borrower } from 'constants/graphql';
+import { PageParams, SortFieldsType } from 'constants/common';
 
 type TableProps = {
-  data: Data,
+  data: CrmGatewayQuery,
   loading: boolean,
   error: ApolloError,
   handlePageChange: (pageParams: PageParams) => void

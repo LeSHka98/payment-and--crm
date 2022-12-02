@@ -1,19 +1,19 @@
 .custom-nav-item {
-  background: $bg-primary;
+  background: $bg-nav-item;
   cursor: pointer;
   padding: 10px 5px;
   text-align: center;
 
   .nav-item-icon {
-    fill: $bg-secondary;
+    fill: $c-nav-item-icon;
   }
 }
 
 .custom-nav-item:hover {
-  background: $bg-secondary;
-  color: $c-primary;
+  background: $bg-nav-item-hover;
+  color: $c-nav-item-hover;
 
   .nav-item-icon {
-    fill: $bg-primary;
+    fill: $c-nav-item-icon-hover;
   }
 }

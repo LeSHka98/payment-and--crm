@@ -7,8 +7,8 @@ import { GET_USERS } from 'api/GraphQL/quaries';
 import Filters from 'components/ClientArea/Filters';
 import ClientAreaTable from 'components/ClientArea/Table';
 // constants
-import { Data, UsersQuery } from 'constants/graphql';
-import { FilterFullFields, DEFAULT_QUERY_PARAMETERS } from 'constants/index';
+import { CrmGatewayQuery, UsersQuery } from 'constants/graphql';
+import { FilterFullFields, DEFAULT_QUERY_PARAMETERS } from 'constants/common';
 // hooks
 import useFilter from 'hooks/useFilter';
 
@@ -16,7 +16,7 @@ const shiftIndex = 1;
 
 const ClientArea = () => {
   const [queryVariables, setQueryVariables] = useState<UsersQuery>(DEFAULT_QUERY_PARAMETERS);
-  const { data, loading, error } = useQuery<Data>(GET_USERS, { variables: queryVariables });
+  const { data, loading, error } = useQuery<CrmGatewayQuery>(GET_USERS, { variables: queryVariables });
 
   const getUsersCallback = useCallback(({
     pageQueryParams,

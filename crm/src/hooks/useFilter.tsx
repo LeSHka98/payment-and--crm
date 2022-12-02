@@ -1,7 +1,7 @@
 // constants
 import {
   FilterFieldsType, FilterFullFields, SortFieldsType, PageParams, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER,
-} from 'constants/index';
+} from 'constants/common';
 // helpers
 import { formVariablesArray } from 'helpers/formVariablesArray';
 

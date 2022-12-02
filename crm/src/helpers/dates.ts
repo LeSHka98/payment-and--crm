@@ -17,3 +17,5 @@ export const getYearsList = (from: number, to: number) => {
 };
 
 export const getMonthsList = () => moment.months();
+
+export const formatDate = (date: string) => date.split('-').reverse().join('-');

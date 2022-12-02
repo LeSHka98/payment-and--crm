@@ -1,11 +1,12 @@
 // libraries
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 // api
 import { ApolloProvider } from '@apollo/client';
 import { getTokenClient } from 'api/GraphQL';
 // components
-import App from 'components';
+import Router from 'components';
 // constants
 import { token } from 'constants/graphql';
 // helpers
@@ -21,7 +22,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <App />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>,
 );

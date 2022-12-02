@@ -1,37 +1,81 @@
-$white: #fff;
-$black: #000;
-$gray: #737373;
-$light-green: #9edc15;
-$orange: #ff9d00;
-$red: red;
-$bg-app: #f8f8f8;
-$c-primary: $white;
-$c-tertiary: $gray;
-$bg-primary: $white;
-$bg-secondary: #4c4c4c;
-$bg-secondary: $gray;
-$br-tertiary: $gray;
+$c-white: #fff;
+$c-white-2: #F8F8F8;
+$c-black: #000;
+$c-gray: #737373;
+$c-gray-2: #4c4c4c;
+$c-gray-3: #9b9b9b;
+$c-light-green: #9edc15;
+$c-orange: #ff9d00;
+$c-red: #FF0000FF;
+$c-yellow: #FFFF00FF;
+$c-blue: #1890ff;
+$c-blue-2: #40a9ff;
+$c-blue-3: #86b7fe;
+$c-blue-4: #212529;
 
-// table sort
-$bg-sort-active: $red;
+$bg-app: $c-white-2;
+
+$c-primary: $c-white;
+$c-secondary: $c-gray-3;
+$c-tertiary: $c-gray;
+
+$bg-primary: $c-white;
+$bg-secondary: $c-gray-2;
+$bg-tertiary: $c-gray;
+
+$br-tertiary: $c-gray;
+
+$shadow-primary: rgba(0, 0, 0, 0.3);
+$shadow-tertiary: $c-gray;
+
+//form common
+$bg-form-input: $c-gray;
+$shadow-form-input: $c-gray;
+$c-error: $c-red;
+
+// nav-panel
+$bg-nav-item: $c-white;
+$bg-nav-item-hover: $c-gray-2;
+$c-nav-item-hover: $c-white;
+$c-nav-item-icon: $c-gray-2;
+$c-nav-item-icon-hover: $c-white;
+
+// clients
+$c-icon: $c-gray;
+$c-icon-active: $c-red;
+$br-button-reset: $c-gray;
+
+// client-page
+$c-fragment: $c-gray-3;
+$br-fragment: $c-gray-3;
+$c-user-table-first-column: $c-gray-3;
+$br-user-table: $c-gray-3;
+// client-page statuses
+$c-status-active: $c-light-green;
+$c-status-invalid: $c-red;
+$c-status-uprid: $c-yellow;
+$c-status-no-id: $c-tertiary;
+
+// breadcrumb
+$c-breadcrumb: $c-black;
 
 // pagination
-$primary-color: #1890ff;
-$pagination-item-bg: #fff;
-$pagination-item-bg-active: #fff;
-$pagination-item-link-bg: #fff;
-$pagination-item-disabled-color-active: #fff;
-$pagination-item-input-bg: #fff;
+$c-pagination-primary: $c-blue;
+$bg-pagination-item: $c-white;
+$bg-pagination-item-active: $c-white;
+$bg-pagination-item-link: $c-white;
+$c-pagination-item-disabled-active: $c-white;
+$bg-pagination-item-input: $c-white;
 
 $c-secondary-pagination: rgba(0, 0, 0, 0.85);
-$c-pagination-active-hover: #40a9ff;
-$c-pagination-jump: #666;
-$br-pagination: #d9d9d9;
+$c-pagination-active-hover: $c-blue-2;
+$c-pagination-jump: $c-gray;
+$br-pagination: $c-gray-3;
 
 // pagination-select
-$c-pagination-select: #212529;
-$br-pagination-select: #ced4da;
-$bg-pagination-select: #fff;
+$c-pagination-select: $c-blue-4;
+$br-pagination-select: $c-gray-3;
+$bg-pagination-select: $c-white;
 
-$br-pagination-select-focus: #86b7fe;
+$br-pagination-select-focus: $c-blue-3;
 $shadow-pagination-select-focus: rgba(13,110,253,.25);

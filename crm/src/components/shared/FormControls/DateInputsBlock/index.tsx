@@ -4,7 +4,7 @@ import {
   ErrorMessage, Field, FormikValues, useFormikContext,
 } from 'formik';
 // helpers
-import { getDaysList, getYearsList, getMonthsList } from 'helpers/formatDates';
+import { getDaysList, getYearsList, getMonthsList } from 'helpers/dates';
 
 type BirthdayInputsBlockProps = {
   labelText?: string,

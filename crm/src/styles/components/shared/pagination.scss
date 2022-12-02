@@ -60,7 +60,7 @@
   }
 
   .rc-pagination-item {
-    background-color: $pagination-item-bg;
+    background-color: $bg-pagination-item;
     border: 1px solid $br-pagination;
     border-radius: 2px;
     cursor: pointer;
@@ -89,21 +89,21 @@
 
     &:focus,
     &:hover {
-      border-color: $primary-color;
+      border-color: $c-pagination-primary;
       transition: all 0.3s;
 
       a {
-        color: $primary-color;
+        color: $c-pagination-primary;
       }
     }
 
     &-active {
-      background: $pagination-item-bg-active;
-      border-color: $primary-color;
+      background: $bg-pagination-item-active;
+      border-color: $c-pagination-primary;
       font-weight: $pagination-font-weight-active;
 
       a {
-        color: $primary-color;
+        color: $c-pagination-primary;
       }
 
       &:focus,
@@ -174,7 +174,7 @@
     }
 
     .rc-pagination-item-link {
-      background-color: $pagination-item-link-bg;
+      background-color: $bg-pagination-item-link;
       border: 1px solid $br-pagination;
       border-radius: 2px;
       display: block;
@@ -188,8 +188,8 @@
 
     &:focus .rc-pagination-item-link,
     &:hover .rc-pagination-item-link {
-      border-color: $primary-color;
-      color: $primary-color;
+      border-color: $c-pagination-primary;
+      color: $c-pagination-primary;
     }
   }
 
@@ -270,7 +270,7 @@
     margin-right: 8px;
 
     input {
-      background-color: $pagination-item-input-bg;
+      background-color: $bg-pagination-item-input;
       border: 1px solid $br-pagination;
       border-radius: 2px;
       box-sizing: border-box;
@@ -282,7 +282,7 @@
       transition: border-color 0.3s;
 
       &:hover {
-        border-color: $primary-color;
+        border-color: $c-pagination-primary;
       }
     }
   }
@@ -305,7 +305,7 @@
         border-color: transparent;
 
         a {
-          color: $pagination-item-disabled-color-active;
+          color: $c-pagination-item-disabled-active;
         }
       }
     }

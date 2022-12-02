@@ -6,7 +6,9 @@
 @import "app";
 @import "NavPanel/navPanel";
 @import "../objects/wrapper";
+@import "shared/breadcrumbs";
 @import "Filters/filters";
 @import "ClientArea/clientArea";
-@import "shared/Pagination/pagination";
+@import "shared/pagination";
 @import "ClientArea/table";
+@import "ClientPage/clientInfoPage";

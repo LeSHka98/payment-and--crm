@@ -6,7 +6,7 @@ import FormControlTextInput from 'components/shared/FormControls/TextInput';
 import { Button } from 'reactstrap';
 // constants
 import { initialValues, searchSchema } from 'components/ClientArea/Filters/config';
-import { FilterFieldsType } from 'constants/index';
+import { FilterFieldsType } from 'constants/common';
 // static
 import { ReactComponent as CloseIcon } from 'assets/images/close.svg';
 

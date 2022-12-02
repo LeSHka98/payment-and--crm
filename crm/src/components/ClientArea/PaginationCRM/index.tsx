@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Pagination from 'rc-pagination';
 // constants
-import { PageParams, PAGE_SIZES, DEFAULT_PAGE_SIZE } from 'constants/index';
+import { PageParams, PAGE_SIZES, DEFAULT_PAGE_SIZE } from 'constants/common';
 
 type PaginationCRMProps = {
   handlePageChange: (pageParams: PageParams) => void

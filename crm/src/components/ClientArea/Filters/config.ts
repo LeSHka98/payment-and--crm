@@ -4,7 +4,7 @@ import moment from 'moment';
 import { REGISTER_YAP_ERRORS } from 'constants/registerYupErrors';
 import {
   PASSPORT_REGEXP, PHONE_REGEXP, FORBIDDEN_EMAILS, LATIN_SPACE_HYPHEN_REGEXP, MAX_AGE_DIFFERENCE,
-} from 'constants/index';
+} from 'constants/common';
 
 const checkAge = (value: string) => {
   if (!value) {
