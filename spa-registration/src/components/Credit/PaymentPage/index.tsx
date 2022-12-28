@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // constants
 import { CreditDetailsType } from 'components/Credit/Calculator/config';
+import { ROUTER_PATHS } from 'constants/router';
 // helpers
-import { getFromLocalStorage, saveToLocalStorage } from 'helpers/LocalStorage';
+import { getFromLocalStorage, saveToLocalStorage } from 'helpers/localStorage';
 // hooks
 import { useAuth } from 'hooks/useAuthProvider';
 // static
-import { ReactComponent as Bizum } from 'assets/images/bizum.svg';
+import { ReactComponent as BizumIcon } from 'assets/images/bizum.svg';
+import { ReactComponent as StripeIcon } from 'assets/images/stripe.svg';
 
 const Payment = () => {
   const { userEmail } = useAuth();
@@ -17,9 +19,10 @@ const Payment = () => {
   const shiftIndex = 1;
   const oneHundredAndTenPercents = 1.1;
   const tenPercents = 0.1;
+  const totalPrice = creditDetails && Math.round(oneHundredAndTenPercents * creditDetails.amount);
 
   useEffect(() => {
-    const creditData:Array<CreditDetailsType> = getFromLocalStorage(userEmail);
+    const creditData: Array<CreditDetailsType> = getFromLocalStorage(userEmail);
 
     if (creditData) {
       setCredits(creditData);
@@ -27,7 +30,13 @@ const Payment = () => {
     }
   }, [userEmail]);
 
-  const payForCredit = () => {
+  const payForCredit = (type?: string) => {
+    if (type === 'stripe') {
+      navigate(ROUTER_PATHS.stripe, { replace: true });
+
+      return;
+    }
+
     const newCredits = credits.map((credit, index) => {
       if (index === credits.length - shiftIndex) {
         return { ...credit, status: 'Paid' };
@@ -37,7 +46,7 @@ const Payment = () => {
     });
 
     saveToLocalStorage(userEmail, newCredits);
-    navigate('/creditList');
+    navigate(ROUTER_PATHS.creditList, { replace: true });
   };
 
   return (
@@ -47,7 +56,7 @@ const Payment = () => {
         <div className="payment-total">
           <span className="payment-total-text">Total amount to pay:</span>
           <span className="payment-total-number">
-            { creditDetails ? `${oneHundredAndTenPercents * creditDetails.amount}  €` : '-'}
+            { creditDetails ? `${totalPrice}  €` : '-'}
           </span>
         </div>
         <div className="payment-details">
@@ -65,10 +74,17 @@ const Payment = () => {
         <p>Choose one of the four payment methods to return your monthly fee:</p>
         <div className="payment-card">
           <div className="payment-card-top">
-            <span className="payment-card-name">Pay with Bizum</span>
-            <Bizum />
+            <span className="payment-card-name">Pay with Stripe</span>
+            <StripeIcon />
           </div>
-          <button className="button orange-button" onClick={payForCredit}>PAY WITH bizum €224</button>
+          <button className="button orange-button" onClick={() => payForCredit('stripe')}>PAY WITH Stripe</button>
+        </div>
+        <div className="payment-card">
+          <div className="payment-card-top">
+            <span className="payment-card-name">Pay with Bizum</span>
+            <BizumIcon />
+          </div>
+          <button className="button orange-button" onClick={() => payForCredit()}>PAY WITH bizum €224</button>
         </div>
       </div>
     </div>

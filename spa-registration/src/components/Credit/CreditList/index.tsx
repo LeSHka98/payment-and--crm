@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 // constants
 import { CreditDetailsType } from 'components/Credit/Calculator/config';
 // helpers
-import { getFromLocalStorage } from 'helpers/LocalStorage';
+import { getFromLocalStorage } from 'helpers/localStorage';
 // hooks
 import { useAuth } from 'hooks/useAuthProvider';
 //  static
@@ -14,7 +14,7 @@ const CreditList = () => {
   const [credits, setCredits] = useState<Array<CreditDetailsType>>();
 
   useEffect(() => {
-    const creditData:Array<CreditDetailsType> = getFromLocalStorage(userEmail);
+    const creditData: Array<CreditDetailsType> = getFromLocalStorage(userEmail);
 
     if (creditData) {
       setCredits(creditData);

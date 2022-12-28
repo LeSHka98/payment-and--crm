@@ -10,7 +10,7 @@ import InfoBlock from 'components/shared/InfoBlock';
 import Footer from 'components/layout/Footer';
 import ImagesBlock from 'components/shared/ImagesBlock';
 // constants
-import { breadCrumbs } from 'constants/index';
+import { breadCrumbs } from 'constants/common';
 
 const RegistrationPage = () => (
   <div className="registration-page">

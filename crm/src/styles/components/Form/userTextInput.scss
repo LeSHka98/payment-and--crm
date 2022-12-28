@@ -6,9 +6,11 @@
 
 .form-user-input {
   @extend %form-control;
+
   max-width: 300px;
 }
 
-.form-user-input.is-invalid, .was-validated .form-user-input:invalid {
+.form-user-input.is-invalid,
+.was-validated .form-user-input:invalid {
   @extend %form-control-invalid;
 }

@@ -1,10 +1,10 @@
 %button {
-  color: $c-secondary;
+  color: $c-button;
   font-family: Quicksand, sans-serif;
-  margin-bottom: 15px;
-  padding: 12px;
-  transition: 0.2s;
   font-weight: 600;
+  margin-bottom: 15px;
+  padding: 12px 0;
+  transition: 0.2s;
 
   &:hover {
     opacity: 0.75;
@@ -20,6 +20,15 @@
 .orange-button {
   @extend %button;
 
-  background: $bg-tertiary;
+  background: $bg-button-orange;
   padding: 15px;
+}
+
+.payment-button {
+  @extend %button;
+
+  background: $bg-payment-button;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }

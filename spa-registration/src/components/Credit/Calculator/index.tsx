@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import Range from 'rc-slider';
 // helpers
-import { getOtherFieldFromServerData, roundEnteredData } from 'helpers/Calculator';
-import { getFromLocalStorage, saveToLocalStorage } from 'helpers/LocalStorage';
+import { getOtherFieldFromServerData, roundEnteredData } from 'helpers/calculator';
+import { getFromLocalStorage, saveToLocalStorage } from 'helpers/localStorage';
 // hooks
 import { useAuth } from 'hooks/useAuthProvider';
 // styles
@@ -50,6 +50,7 @@ const Calculator: React.FC<CalculatorProps> = ({ setStatus }) => {
 
       return;
     }
+
     saveToLocalStorage(userEmail, [{ ...fields, status: 'Active', id: 0 }]);
   };
 

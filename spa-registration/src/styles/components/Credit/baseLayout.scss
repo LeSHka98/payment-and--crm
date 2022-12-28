@@ -1,11 +1,16 @@
 .main-block {
+  align-items: center;
   display: flex;
   padding: 20px 0;
-  align-items: center;
 
   .main-block-left {
     flex-basis: 52%;
     margin-right: 6%;
+
+    @media (max-width: $screen-xs-max) {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
   }
 
   .main-block-right {

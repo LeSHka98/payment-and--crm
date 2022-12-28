@@ -1,7 +1,7 @@
 .info-block {
-  background: $bg-secondary;
+  background: $bg-info-block;
   border-radius: 4px;
-  box-shadow: 0 2px 6px $shadow-secondary;
+  box-shadow: 0 2px 6px $sh-info-block;
   height: max-content;
   margin-top: 25px;
   padding: 20px;
@@ -29,7 +29,7 @@
 }
 
 .icon {
-  fill: $c-tertiary;
+  fill: $c-info-block-icon;
   height: 20px;
   margin-right: 10px;
   width: 20px;

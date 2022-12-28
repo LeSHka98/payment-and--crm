@@ -1,7 +1,7 @@
 .main-block {
+  align-items: center;
   display: flex;
   padding: 20px 0;
-  align-items: center;
 
   .main-block-left {
     flex-basis: 52%;
@@ -22,8 +22,8 @@
 }
 
 .cookies {
-  background: $bg-secondary;
-  color: $c-primary;
+  background: $bg-cookies;
+  color: $c-cookies;
   padding: 20px;
   text-decoration: underline;
 }

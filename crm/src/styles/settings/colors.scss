@@ -1,5 +1,5 @@
 $c-white: #fff;
-$c-white-2: #F8F8F8;
+$c-white-2: #f8f8f8;
 $c-black: #000;
 $c-gray: #737373;
 $c-gray-2: #4c4c4c;
@@ -7,28 +7,23 @@ $c-gray-3: #9b9b9b;
 $c-light-green: #9edc15;
 $c-orange: #ff9d00;
 $c-red: #dc3545;
-$c-red-2: rgba(220,53,69,.25);
-$c-yellow: #FFFF00FF;
+$c-red-2: rgb(220 53 69 / 25%);
+$c-yellow: #ff0f;
 $c-blue: #1890ff;
 $c-blue-2: #40a9ff;
 $c-blue-3: #86b7fe;
 $c-blue-4: #212529;
-$c-blue-5: rgba(13,110,253,.25);
-$c-dark: rgba(0, 0, 0, 0.3);
-$c-dark-2: rgba(0, 0, 0, 0.85);
-
+$c-blue-5: rgb(13 110 253 / 25%);
+$c-dark: rgb(0 0 0 / 30%);
+$c-dark-2: rgb(0 0 0 / 85%);
 $bg-app: $c-white-2;
-
 $c-primary: $c-white;
 $c-secondary: $c-gray-3;
 $c-tertiary: $c-gray;
-
 $bg-primary: $c-white;
 $bg-secondary: $c-gray-2;
 $bg-tertiary: $c-gray;
-
 $br-tertiary: $c-gray;
-
 $shadow-primary: $c-dark;
 $shadow-tertiary: $c-gray;
 
@@ -72,7 +67,8 @@ $sh-form-control-focus: $c-blue-5;
 $c-form-control-invalid: $c-red;
 $sh-form-control-focus-invalid: $c-red-2;
 
-// breadcrumb
+// Verification table
+$c-download: $c-orange;
 $c-breadcrumb: $c-black;
 
 // pagination
@@ -82,7 +78,6 @@ $bg-pagination-item-active: $c-white;
 $bg-pagination-item-link: $c-white;
 $c-pagination-item-disabled-active: $c-white;
 $bg-pagination-item-input: $c-white;
-
 $c-secondary-pagination: $c-dark-2;
 $c-pagination-active-hover: $c-blue-2;
 $c-pagination-jump: $c-gray;
@@ -92,7 +87,6 @@ $br-pagination: $c-gray-3;
 $c-pagination-select: $c-blue-4;
 $br-pagination-select: $c-gray-3;
 $bg-pagination-select: $c-white;
-
 $br-pagination-select-focus: $c-blue-3;
 $shadow-pagination-select-focus: $c-blue-5;
 

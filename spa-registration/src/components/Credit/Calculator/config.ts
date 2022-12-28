@@ -6,9 +6,24 @@ export const serverData = [
   { amount: 500, term: 50 },
 ];
 
+type CardFormData = {
+  brand: string,
+  exp_month: string,
+  exp_year: string,
+  lastSymbols: string,
+  country: string,
+  funding: string,
+  paymentTime: string,
+  email: string,
+  name: string,
+  phone: string,
+  cardName: string,
+};
+
 export type CreditDetailsType = {
   id: number,
   amount: number;
   term: number;
   status?: 'Active' | 'Paid';
+  cardFormData?: CardFormData
 };

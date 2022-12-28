@@ -1,5 +1,5 @@
 .green-background {
-  background: $bg-primary;
+  background: $bg-user-info;
 }
 
 .user-info-page {
@@ -10,9 +10,9 @@
 }
 
 .user-info-form {
-  background: $bg-secondary;
+  background: $bg-user-info-form;
   border-radius: 4px;
-  box-shadow: 0 2px 5px $shadow-tertiary;
+  box-shadow: 0 2px 5px $shadow-user-info-form;
   left: 0;
   margin: auto;
   padding: 60px 60px 30px;

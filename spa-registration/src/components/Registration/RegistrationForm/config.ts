@@ -4,7 +4,7 @@ import moment from 'moment';
 // constants
 import {
   PHONE_REGEXP, PASSPORT_REGEXP, ONLY_LATIN_REGEXP, Registration, MAX_AGE, MIN_AGE, PASSWORD_REGEXP,
-} from 'constants/index';
+} from 'constants/common';
 import { REGISTER_YAP_ERRORS } from 'constants/registerYupErrors';
 
 const checkAge = ({ day, month, year } : { day: number, month: number, year: number }) => {

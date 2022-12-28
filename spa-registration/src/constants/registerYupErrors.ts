@@ -2,6 +2,7 @@ export const REGISTER_YAP_ERRORS = {
   tooShort: 'Too Short!',
   tooLong: 'Too Long!',
   onlyLatinLetters: 'Only Latin letters are allowed',
+  onlyLetters: 'Only letters are allowed',
   required: 'Required',
   passportSchema: 'Schema: AB1234567',
   invalidPhoneNumber: 'Invalid phone number',
@@ -10,4 +11,6 @@ export const REGISTER_YAP_ERRORS = {
   passwordLength: 'Minimum length is 12',
   passwordMessage: 'Only Latin letters, at least 1 digit, at least 1 UpperCase letter',
   repeatPassword: 'Passwords don\'t match',
+  uppercase: 'Not an uppercase',
+  domain: 'Invalid domain',
 };

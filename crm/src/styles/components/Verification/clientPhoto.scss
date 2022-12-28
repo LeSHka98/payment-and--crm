@@ -1,6 +1,6 @@
 .image-container {
-  width: 400px;
   height: 400px;
+  width: 400px;
 
   .pre-image {
     height: inherit;
@@ -8,8 +8,8 @@
   }
 
   .image-crop {
-    min-width: 400px;
     min-height: 400px;
+    min-width: 400px;
   }
 }
 

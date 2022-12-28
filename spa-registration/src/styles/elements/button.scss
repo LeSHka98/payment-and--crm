@@ -3,4 +3,8 @@
   border-radius: 3px;
   cursor: pointer;
   width: 100%;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }

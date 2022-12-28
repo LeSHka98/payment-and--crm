@@ -14,7 +14,7 @@ type AuthorizedProps = {
   children: React.ReactNode;
 };
 
-const AuthProvider: React.FC<AuthorizedProps> = ({ children }) => {
+const useAuthProvider: React.FC<AuthorizedProps> = ({ children }) => {
   const [isAuth, setIsAuth] = useState<boolean>();
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -45,4 +45,4 @@ const AuthProvider: React.FC<AuthorizedProps> = ({ children }) => {
   );
 };
 
-export default AuthProvider;
+export default useAuthProvider;

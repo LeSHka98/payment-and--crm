@@ -10,7 +10,7 @@ import UserInfo from 'components/UserInfo/index';
 import ImagesBlock from 'components/shared/ImagesBlock';
 import Footer from 'components/layout/Footer';
 // constants
-import { Registration } from 'constants/index';
+import { Registration } from 'constants/common';
 
 const UserInfoPage = () => {
   const navigate = useNavigate();

@@ -10,3 +10,8 @@
     width: 100%;
   }
 }
+
+.input-invalid {
+  border: 1px solid $br-form-invalid;
+  box-shadow: none;
+}

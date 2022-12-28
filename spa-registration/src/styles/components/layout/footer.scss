@@ -1,6 +1,6 @@
 .footer {
-  background: $bg-primary;
-  color: $c-secondary;
+  background: $bg-footer;
+  color: $c-footer;
   padding: 30px 0;
   position: relative;
   text-align: left;
@@ -17,7 +17,7 @@
     }
 
     .icon {
-      fill: $c-secondary;
+      fill: $c-footer-icon;
       height: 20px;
       margin-right: 10px;
       width: 20px;
@@ -47,7 +47,7 @@
 }
 
 .line {
-  background: $bg-secondary;
+  background: $bg-footer-line;
   border: none;
   height: 1px;
 }

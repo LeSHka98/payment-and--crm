@@ -1,7 +1,7 @@
 .login-form {
-  background: $bg-secondary;
+  background: $bg-login-form;
   border-radius: 4px;
-  box-shadow: 0 2px 5px $shadow-tertiary;
+  box-shadow: 0 2px 5px $sh-login-form;
   left: 0;
   margin: auto;
   padding: 60px 60px 30px;
@@ -20,7 +20,7 @@
 }
 
 .login-link {
-  color: $c-tertiary;
+  color: $c-login-link;
   display: block;
   margin: 20px auto 10px;
   text-align: center;

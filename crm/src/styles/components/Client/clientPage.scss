@@ -18,10 +18,10 @@
 
   .icon {
     fill: $c-icon;
-    width: 10px;
     height: 8px;
     margin-bottom: 0.5rem;
     margin-left: 5px;
+    width: 10px;
   }
 }
 
@@ -35,18 +35,18 @@
 }
 
 .no-id {
-  color:  $c-status-no-id;
+  color: $c-status-no-id;
 }
 
 .blocked,
 .invalid {
-  color:  $c-status-invalid;
+  color: $c-status-invalid;
 }
 
 .fragment {
+  border-right: 1px solid $br-fragment;
   color: $c-fragment;
   padding: 0 10px;
-  border-right: 1px solid $br-fragment;
 
   .fragment-first-elem {
     margin-right: 15px;
@@ -55,8 +55,8 @@
 
 .user-table {
   border-right: 1px solid $br-user-table;
-  padding-right: 10px;
   margin-right: 10px;
+  padding-right: 10px;
 
   .first-column {
     color: $c-user-table-first-column;

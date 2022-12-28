@@ -3,52 +3,56 @@
 }
 
 .credit-details-block {
-  background: $bg-secondary;
+  background: $bg-credit-details-block;
   border-radius: 4px;
-  box-shadow: 0 3px 3px $shadow-primary;
-  overflow: hidden;
+  box-shadow: 0 3px 3px $sh-credit-details-block;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .credit-details-top {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 30px;
 
   .credit-details-plan {
-    color: $c-quaternary;
+    color: $c-credit-details-plan;
     font-size: 16px;
     font-weight: 700;
     margin-top: 0;
   }
 
   .credit-details-amount {
-    color: $c-primary;
+    color: $c-credit-details-amount;
     font-size: 26px;
     font-weight: 600;
     margin: 0;
   }
+
   .credit-details-status {
-    display: flex;
     align-items: center;
-    gap: 5px;
-    color: $c-tertiary;
+    color: $c-credit-details-status;
+    display: flex;
     font-size: 15px;
+    gap: 5px;
   }
 }
+
 .credit-details-accordion {
-  color: $c-secondary;
-  background: $bg-primary;
+  background: $bg-credit-details-accordion;
+  color: $c-credit-details-accordion;
   padding: 30px 30px 20px;
 
   table {
     display: block;
+
     tbody {
       display: block;
 
       .credit-details-table-row {
         display: flex;
+
         td {
           width: 70%;
         }
@@ -57,11 +61,10 @@
   }
 }
 
-
 .credit-details-accordion-button {
-  color: $c-secondary;
+  background: $bg-credit-details-accordion-button;
   border: none;
-  background: $bg-primary;
+  color: $c-credit-details-accordion-button;
   cursor: pointer;
   display: block;
   margin: 15px auto auto;
@@ -76,14 +79,14 @@
 }
 
 .credit-details-to-payment {
-  text-decoration: none;
-  padding: 15px 25px;
+  background: $bg-credit-details-payment;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px $sh-credit-details-payment;
+  color: $c-credit-details-payment;
+  display: flex;
   font-size: 18px;
   font-weight: 700;
-  background: $bg-secondary;
-  box-shadow: 0 1px 3px $shadow-primary;
-  color: $c-tertiary;
-  border-radius: 4px;
-  display: flex;
   justify-content: space-between;
+  padding: 15px 25px;
+  text-decoration: none;
 }

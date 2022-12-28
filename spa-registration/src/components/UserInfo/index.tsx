@@ -1,6 +1,6 @@
 import React from 'react';
 // constants
-import { Registration } from 'constants/index';
+import { Registration } from 'constants/common';
 
 type UserInfoProps = {
   user: Registration

@@ -10,10 +10,12 @@ import { ReactComponent as Logo } from 'assets/images/logo.svg';
 import FormControlTextInput from 'components/shared/FormControls/TextInput';
 // constants
 import { loginInitialValues, loginSchema } from 'components/Login/LoginForm/config';
-import { Login } from 'constants/index';
+import { Login } from 'constants/common';
 
 const LoginForm = () => {
   const navigate = useNavigate();
+
+  const login = (values: Login) => logIn(values, navigate);
 
   return (
     <div className="login-form">
@@ -21,7 +23,7 @@ const LoginForm = () => {
       <h3>Log in into your account</h3>
       <Formik
         initialValues={loginInitialValues}
-        onSubmit={(values: Login) => logIn(values, navigate)}
+        onSubmit={login}
         validationSchema={loginSchema}
       >
         {() => (

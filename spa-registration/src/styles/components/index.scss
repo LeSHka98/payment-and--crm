@@ -25,6 +25,7 @@
 @import "Credit/CreditDetails/creditDetails";
 @import "Credit/CreditList/creditList";
 @import "Credit/Paymant/payment";
+@import "Stripe/pdfComponent";
 
 .router-wait {
   font-size: 50px;

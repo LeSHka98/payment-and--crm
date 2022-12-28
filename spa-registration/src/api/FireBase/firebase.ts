@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } f
 import { database, auth } from 'api/FireBase/databaseConfig';
 import { setDoc, getDoc, doc } from '@firebase/firestore';
 // constants
-import { Registration, Login } from 'constants/index';
+import { Registration, Login } from 'constants/common';
 
 const register = async ({ email, password }: Login): Promise<boolean> => {
   try {

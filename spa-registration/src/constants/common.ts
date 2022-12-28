@@ -4,7 +4,17 @@ export const PHONE_REGEXP = /^(\+375|80)\((29|25|44|33)\)(\d{3})-(\d{2})-(\d{2})
 
 export const ONLY_LATIN_REGEXP = /^[a-zA-Z]+$/;
 
+export const NO_NUMBERS_REGEXP = /^[^0-9]+$/;
+
 export const PASSWORD_REGEXP = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{12,}$/gm;
+
+export const ALLOWED_EMAIL_ENDINGS = [
+  'gmail.com',
+  'yandex.ru',
+  'mail.ru',
+  'outlook.com',
+  'yahoo.com',
+];
 
 export const breadCrumbs = [
   'PERSONAL INFORMATION',

@@ -1,41 +1,129 @@
-$white: #fff;
-$gray: #737373;
-$light-green: #9edc15;
-$orange: #ff9d00;
-$red: red;
+$c-white: #fff;
+$c-white-2: #d7d6d6;
+$c-white-3: #f8f8f8;
+$c-gray: #737373;
+$c-gray-2: #4c4c4c;
+$c-green: rgb(158 220 21 / 40%);
+$c-light-green: #9edc15;
+$c-orange: #ff9d00;
+$c-red: #f00f;
+$c-blue: #192552;
+$c-dark: rgb(0 0 0 / 25%);
+$c-primary: $c-light-green;
+$c-secondary: $c-white;
+$c-tertiary: $c-gray-2;
+$c-quaternary: $c-gray;
 
-
-$c-primary: $light-green;
-$c-secondary: $white;
-$c-tertiary: #4c4c4c;
-$c-quaternary: $gray;
-
-
-$bg-primary: $light-green;
-$bg-secondary: $white;
-$bg-tertiary: $orange;
-$bg-main: #f8f8f8;
-
-$shadow-primary: rgba(0, 0, 0, 0.1);
-$shadow-secondary: rgba(0, 0, 0, 0.2);
-$shadow-tertiary: rgba(0, 0, 0, 0.3);
-
-$border-primary: $light-green;
+$bg-primary: $c-light-green;
+$bg-secondary: $c-white;
+$bg-tertiary: $c-orange;
+$bg-main: $c-white-3;
+$shadow-primary: rgb(0 0 0 / 10%);
+$shadow-secondary: rgb(0 0 0 / 20%);
+$shadow-tertiary: rgb(0 0 0 / 30%);
+$border-primary: $c-light-green;
 $border-secondary: #aaa;
 $border-tertiary: #d8d8d8;
 
 // calculator-slider
 $bg-slider: $bg-primary;
-$border-slider: $border-primary;
-$shadow-slider: $light-green;
+$border-slider-active: $border-primary;
+$border-slider-handle: $border-primary;
+$border-slider-handle-dragging: $border-primary;
+$shadow-slider: $c-light-green;
 
 // calculator
-$c-calculator-primary: $c-tertiary;
-$c-calculator-secondary: $c-primary;
-$bg-calculator-caption: rgba(158, 220, 21, 0.4);
+$c-calculator-input: $c-primary;
+$c-calculator-caption: $c-tertiary;
+$c-calculator-input-name: $c-tertiary;
+$c-calculator-input-block: $c-primary;
+$c-calculator-input-block: $c-primary;
+$bg-calculator-caption: $c-green;
+$br-calculator-input-block: $border-primary;
 $shadow-calculator-block: $shadow-primary;
 
+// calculator credit list
+$bg-credit-list: $bg-secondary;
+$sh-credit-list: $shadow-secondary;
+$c-credit-list-amount: $c-primary;
+$c-credit-list-status: $c-tertiary;
 
-// payment
-$border-payment-details: #D7D6D6;
-$shadow-payment-card: rgba(0, 0, 0, 0.25);
+// calculator credit details
+$bg-credit-details-block: $bg-secondary;
+$sh-credit-details-block: $shadow-primary;
+$c-credit-details-plan: $c-quaternary;
+$c-credit-details-amount: $c-primary;
+$c-credit-details-status: $c-tertiary;
+$c-credit-details-accordion: $c-secondary;
+$bg-credit-details-accordion: $bg-primary;
+$c-credit-details-accordion-button: $c-secondary;
+$bg-credit-details-accordion-button: $bg-primary;
+$bg-credit-details-payment: $bg-secondary;
+$sh-credit-details-payment: $shadow-primary;
+$c-credit-details-payment: $c-tertiary;
+
+// calculator payment
+$bg-payment-card: $bg-secondary;
+$border-payment-details: $c-white-2;
+$shadow-payment-card: $c-dark;
+$bg-payment-button: $c-blue;
+$c-payment-details: $c-quaternary;
+$bg-payment-total-number: $bg-secondary;
+$sh-payment-total-number: $shadow-secondary;
+
+// form
+$bg-form: $bg-secondary;
+$shadow-form: $shadow-primary;
+$c-form-invalid: $c-red;
+$br-form-invalid: $c-red;
+
+// userInfoPage
+$bg-user-info: $c-light-green;
+$bg-user-info-form: $c-white;
+$shadow-user-info-form: $shadow-tertiary;
+
+// breadCrumbs
+$bg-breadcrumbs: $bg-secondary;
+$br-breadcrumb: $border-tertiary;
+$c-breadcrumb: $c-tertiary;
+
+// buttons
+$c-button: $c-secondary;
+$bg-button-green: $bg-primary;
+$bg-button-orange: $bg-tertiary;
+$c-button: $c-secondary;
+
+// infoBlock
+$bg-info-block: $bg-secondary;
+$sh-info-block: $shadow-secondary;
+$c-info-block-icon: $c-tertiary;
+
+// cookies
+$bg-cookies: $bg-secondary;
+$c-cookies: $c-primary;
+
+// login
+$bg-login-form: $bg-secondary;
+$sh-login-form: $shadow-tertiary;
+$c-login-link: $c-tertiary;
+
+// header
+$bg-header: $bg-secondary;
+$c-header: $c-secondary;
+$bg-header-button: $bg-secondary;
+$br-header-button: $border-secondary;
+$c-header-link: $border-secondary;
+$c-header-link-active: $c-primary;
+
+// mobile menu
+$bg-mobile-menu: $bg-secondary;
+$br-mobile-menu-links: $border-secondary;
+$c-mobile-menu-link: $c-tertiary;
+$c-mobile-menu-link-active: $c-primary;
+$br-mobile-menu-link: $border-secondary;
+
+// footer
+$bg-footer: $bg-primary;
+$c-footer: $c-secondary;
+$c-footer-icon: $c-secondary;
+$bg-footer-line: $bg-secondary;

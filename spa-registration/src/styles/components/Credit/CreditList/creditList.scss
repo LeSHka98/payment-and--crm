@@ -1,24 +1,25 @@
 .credit-list-item {
+  align-items: center;
+  background: $bg-credit-list;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px $sh-credit-list;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background: $bg-secondary;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px $shadow-secondary;
-  padding: 15px 20px;
   margin-bottom: 20px;
+  padding: 15px 20px;
 
   .credit-list-amount {
-    color: $c-primary;
+    color: $c-credit-list-amount;
     font-size: 26px;
     font-weight: 600;
     margin: 0;
   }
+
   .credit-list-status {
-    display: flex;
     align-items: center;
-    gap: 5px;
-    color: $c-tertiary;
+    color: $c-credit-list-status;
+    display: flex;
     font-size: 17px;
+    gap: 5px;
   }
 }

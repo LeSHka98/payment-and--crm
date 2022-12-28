@@ -2,9 +2,9 @@
 import React, { useMemo } from 'react';
 import { ErrorMessage, Field, useFormikContext } from 'formik';
 // constants
-import { Registration } from 'constants/index';
+import { Registration } from 'constants/common';
 // helpers
-import { getDaysList, getYearsList, getMonthsList } from 'helpers/Dates';
+import { getDaysList, getYearsList, getMonthsList } from 'helpers/dates';
 
 type BirthdayInputsBlockProps = {
   labelText?: string,

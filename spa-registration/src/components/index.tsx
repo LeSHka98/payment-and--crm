@@ -9,8 +9,10 @@ import LoginPage from 'components/Login/LoginPage';
 import UserInfoPage from 'components/UserInfo/UserInfoPage';
 import Credit from 'components/Credit';
 import BaseLayout from 'components/layout/BaseLayout';
-import Payment from 'components/Credit/Payment';
+import Payment from 'components/Credit/PaymentPage';
 import CreditList from 'components/Credit/CreditList';
+import Stripe from 'components/Payment';
+import PDFComponent from 'components/Payment/PDF';
 // hooks
 import { useAuth } from 'hooks/useAuthProvider';
 
@@ -38,6 +40,16 @@ const Router = () => {
           element={<CreditList />}
           errorElement={<ErrorPage />}
           path="creditList"
+        />
+        <Route
+          element={<Stripe />}
+          errorElement={<ErrorPage />}
+          path="stripe"
+        />
+        <Route
+          element={<PDFComponent />}
+          errorElement={<ErrorPage />}
+          path="pdf"
         />
       </Route>
       <Route

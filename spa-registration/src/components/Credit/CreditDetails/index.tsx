@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // helpers
-import { getFromLocalStorage } from 'helpers/LocalStorage';
+import { getFromLocalStorage } from 'helpers/localStorage';
 import { CreditDetailsType } from 'components/Credit/Calculator/config';
 // hooks
 import { useAuth } from 'hooks/useAuthProvider';

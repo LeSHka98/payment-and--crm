@@ -5,7 +5,7 @@ const dx = 0;
 const dy = 0;
 
 export const getCroppedImage = (image: HTMLImageElement, crop: PixelCrop) => {
-  const canvas:HTMLCanvasElement = document.createElement('canvas');
+  const canvas: HTMLCanvasElement = document.createElement('canvas');
   const scaleX = image.naturalWidth / image.width;
   const scaleY = image.naturalHeight / image.height;
 

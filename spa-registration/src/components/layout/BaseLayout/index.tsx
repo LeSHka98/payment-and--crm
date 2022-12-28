@@ -1,5 +1,7 @@
+// libraries
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 // components
 import Header from 'components/layout/Header';
 import InfoBlock from 'components/shared/InfoBlock';
@@ -32,6 +34,7 @@ const BaseLayout = () => (
       <ImagesBlock />
     </main>
     <Footer />
+    <ToastContainer />
   </>
 );
 

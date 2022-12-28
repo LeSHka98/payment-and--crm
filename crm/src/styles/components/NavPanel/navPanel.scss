@@ -1,10 +1,10 @@
 .custom-nav-item {
   background: $bg-nav-item;
+  color: $c-tertiary;
   cursor: pointer;
+  display: block;
   padding: 10px 5px;
   text-align: center;
-  color: $c-tertiary;
-  display: block;
   text-decoration: none;
 
   .nav-item-icon {

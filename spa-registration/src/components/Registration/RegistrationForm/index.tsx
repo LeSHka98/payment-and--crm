@@ -12,13 +12,13 @@ import FormControlRadioGroup from 'components/shared/FormControls/RadioGroup';
 import FormControlCheckBoxBlock from 'components/shared/FormControls/CheckBoxBlock';
 import AdditionalInfoBlock from 'components/Registration/AdditionalInfoBlock';
 // constants
+import { MIN_AGE, MAX_AGE, Registration } from 'constants/common';
 import { signupSchema, initialValues } from 'components/Registration/RegistrationForm/config';
-import { MIN_AGE, MAX_AGE, Registration } from 'constants/index';
 
 const RegistrationForm = () => {
   const navigate = useNavigate();
 
-  const createUserAndSignUp = (values: Registration) => createUserAndRegister(values, navigate);
+  const registerUser = (values: Registration) => createUserAndRegister(values, navigate);
 
   return (
     <div>
@@ -28,7 +28,7 @@ const RegistrationForm = () => {
       </Link>
       <Formik
         initialValues={initialValues}
-        onSubmit={createUserAndSignUp}
+        onSubmit={registerUser}
         validationSchema={signupSchema}
       >
         {() => (
