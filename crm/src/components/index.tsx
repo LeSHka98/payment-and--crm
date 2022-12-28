@@ -11,6 +11,7 @@ import UsersTable from 'components/Users/Table';
 import UserPage from 'components/Users/UserPage';
 import EditUser from 'components/Users/EditUser';
 import CreateUser from 'components/Users/CreateUser';
+import Verification from 'components/Verification';
 // styles
 import 'styles/index.scss';
 
@@ -50,6 +51,11 @@ const Router = () => (
         element={<EditUser />}
         errorElement={<ErrorPage />}
         path="users/:userId/edit"
+      />
+      <Route
+        element={<Verification />}
+        errorElement={<ErrorPage />}
+        path="verification"
       />
     </Route>
     <Route

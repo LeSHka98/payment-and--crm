@@ -115,7 +115,7 @@ export type MainPage = {
   personalDataWidget: PersonalDataWidget,
 };
 
-type UserPage = {
+export type UserPage = {
   usersWidget: UsersWidget,
 };
 

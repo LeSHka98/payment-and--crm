@@ -5,7 +5,7 @@ import moment from 'moment';
 // constants
 import { User } from 'constants/graphql';
 // helpers
-import { formatStatus } from 'helpers/Crm/User/table';
+import { formatStatus } from 'helpers/formatStatus';
 
 type TableRowType = {
   user: User

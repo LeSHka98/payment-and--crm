@@ -9,6 +9,7 @@ import { ReactComponent as BorrowersIcon } from 'assets/images/borrowers.svg';
 import { ReactComponent as PartnersIcon } from 'assets/images/partners.svg';
 import { ReactComponent as PaymentsIcon } from 'assets/images/payments.svg';
 import { ReactComponent as NotesIcon } from 'assets/images/sms.svg';
+import { ReactComponent as VerificationIcon } from 'assets/images/verification.svg';
 
 const NavPanel = () => (
   <Nav vertical>
@@ -25,6 +26,12 @@ const NavPanel = () => (
       <NavLink className="custom-nav-item" to="/">
         <BorrowersIcon className="nav-item-icon" />
         <div>Borrowers</div>
+      </NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink className="custom-nav-item" to="verification">
+        <VerificationIcon className="nav-item-icon" />
+        <div>Verification</div>
       </NavLink>
     </NavItem>
     <NavItem className="custom-nav-item">

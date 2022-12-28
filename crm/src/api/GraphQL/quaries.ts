@@ -97,3 +97,17 @@ query CrmGatewayQuery($userId: Long!) {
   }
 }
 `;
+
+export const GET_VERIFICATION_DATA = gql`
+query CrmGatewayQuery($borrowerId: Long!) {
+  mainPage {
+    documentWidget(borrowerId: $borrowerId) {
+      documents {
+        agreementDate,
+        agreementType,
+        documentFileId
+      }
+    }
+  }
+}
+`;

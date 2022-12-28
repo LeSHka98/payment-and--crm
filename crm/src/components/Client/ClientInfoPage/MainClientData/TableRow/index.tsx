@@ -1,6 +1,7 @@
 // libraries
 import React from 'react';
-import { formatPassport } from 'helpers/clientsDataFormat';
+// helpers
+import { formatPassport } from 'helpers/formatPassport';
 import { formatDate } from 'helpers/dates';
 
 type TableRowType = {
@@ -36,7 +37,7 @@ const TableRow: React.FC<TableRowType> = ({ title, value, type }) => {
     switch (type) {
       case 'passport': return formatPassport(value as string);
 
-      case 'date': return formatDate(value as string);
+      case 'date': return formatDate(value as string, 'DD-MM-YYYY');
 
       case 'sex': return sex[value as keyof SexType];
 

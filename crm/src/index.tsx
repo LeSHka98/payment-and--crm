@@ -14,6 +14,7 @@ import { saveToLocalStorage } from 'helpers/localStorage';
 // styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.min.css';
+import 'react-image-crop/src/ReactCrop.scss';
 import 'index.css';
 
 saveToLocalStorage('token', token);

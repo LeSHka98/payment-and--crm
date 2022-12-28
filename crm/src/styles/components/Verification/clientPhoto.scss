@@ -1,0 +1,22 @@
+.image-container {
+  width: 400px;
+  height: 400px;
+
+  .pre-image {
+    height: inherit;
+    width: auto;
+  }
+
+  .image-crop {
+    min-width: 400px;
+    min-height: 400px;
+  }
+}
+
+.photo-btn-block {
+  margin: 15px 0;
+}
+
+.image-input-file {
+  display: none;
+}
