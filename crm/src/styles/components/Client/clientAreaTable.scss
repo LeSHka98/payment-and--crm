@@ -1,0 +1,38 @@
+.table-sort-caption {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .table-sort-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .icon {
+      fill: $c-icon;
+      height: 8px;
+      width: 10px;
+    }
+
+    .icon.active {
+      fill: $c-icon-active;
+    }
+  }
+}
+
+.table-clients-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.spinner-placement,
+.error-placement {
+  margin: 20px  calc(50% - 25px) 20px;
+  text-align: center;
+}
+
+.table-row-link {
+  color: inherit;
+  text-decoration: none;
+}
+

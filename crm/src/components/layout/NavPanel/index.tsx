@@ -1,6 +1,7 @@
 // libraries
 import React from 'react';
 import { Nav, NavItem } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 // assets
 import { ReactComponent as MoneyManLogo } from 'assets/images/moneyman-logo.svg';
 import { ReactComponent as LeadsIcon } from 'assets/images/leads.svg';
@@ -14,13 +15,17 @@ const NavPanel = () => (
     <NavItem>
       <MoneyManLogo />
     </NavItem>
-    <NavItem className="custom-nav-item">
-      <LeadsIcon className="nav-item-icon" />
-      <div>Leads</div>
+    <NavItem>
+      <NavLink className="custom-nav-item" to="users">
+        <LeadsIcon className="nav-item-icon" />
+        <div>Leads</div>
+      </NavLink>
     </NavItem>
-    <NavItem className="custom-nav-item">
-      <BorrowersIcon className="nav-item-icon" />
-      <div>Borrowers</div>
+    <NavItem>
+      <NavLink className="custom-nav-item" to="/">
+        <BorrowersIcon className="nav-item-icon" />
+        <div>Borrowers</div>
+      </NavLink>
     </NavItem>
     <NavItem className="custom-nav-item">
       <NotesIcon className="nav-item-icon" />

@@ -1,0 +1,30 @@
+.user-page {
+  height: 100%;
+  padding: 20px 25px;
+  width: 100%;
+
+  .user-page-title-block {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.user-info-block {
+  display: flex;
+}
+
+.user-table {
+  border-right: 1px solid $c-secondary;
+  margin-right: 10px;
+  padding-right: 10px;
+
+  .first-column {
+    color: $c-secondary;
+  }
+
+  .cell {
+    overflow-wrap: break-word;
+    padding: 5px 10px;
+  }
+}

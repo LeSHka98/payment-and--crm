@@ -6,12 +6,16 @@ $c-gray-2: #4c4c4c;
 $c-gray-3: #9b9b9b;
 $c-light-green: #9edc15;
 $c-orange: #ff9d00;
-$c-red: #FF0000FF;
+$c-red: #dc3545;
+$c-red-2: rgba(220,53,69,.25);
 $c-yellow: #FFFF00FF;
 $c-blue: #1890ff;
 $c-blue-2: #40a9ff;
 $c-blue-3: #86b7fe;
 $c-blue-4: #212529;
+$c-blue-5: rgba(13,110,253,.25);
+$c-dark: rgba(0, 0, 0, 0.3);
+$c-dark-2: rgba(0, 0, 0, 0.85);
 
 $bg-app: $c-white-2;
 
@@ -25,7 +29,7 @@ $bg-tertiary: $c-gray;
 
 $br-tertiary: $c-gray;
 
-$shadow-primary: rgba(0, 0, 0, 0.3);
+$shadow-primary: $c-dark;
 $shadow-tertiary: $c-gray;
 
 //form common
@@ -50,11 +54,23 @@ $c-fragment: $c-gray-3;
 $br-fragment: $c-gray-3;
 $c-user-table-first-column: $c-gray-3;
 $br-user-table: $c-gray-3;
+
 // client-page statuses
 $c-status-active: $c-light-green;
 $c-status-invalid: $c-red;
 $c-status-uprid: $c-yellow;
 $c-status-no-id: $c-tertiary;
+
+// user
+$c-form-control: $c-blue-4;
+$bg-form-control: $c-white;
+$br-form-control: $c-gray-3;
+$c-form-control-focus: $c-blue-4;
+$bg-form-control-focus: $c-white;
+$br-form-control-focus: $c-blue-3;
+$sh-form-control-focus: $c-blue-5;
+$c-form-control-invalid: $c-red;
+$sh-form-control-focus-invalid: $c-red-2;
 
 // breadcrumb
 $c-breadcrumb: $c-black;
@@ -67,7 +83,7 @@ $bg-pagination-item-link: $c-white;
 $c-pagination-item-disabled-active: $c-white;
 $bg-pagination-item-input: $c-white;
 
-$c-secondary-pagination: rgba(0, 0, 0, 0.85);
+$c-secondary-pagination: $c-dark-2;
 $c-pagination-active-hover: $c-blue-2;
 $c-pagination-jump: $c-gray;
 $br-pagination: $c-gray-3;
@@ -78,4 +94,4 @@ $br-pagination-select: $c-gray-3;
 $bg-pagination-select: $c-white;
 
 $br-pagination-select-focus: $c-blue-3;
-$shadow-pagination-select-focus: rgba(13,110,253,.25);
+$shadow-pagination-select-focus: $c-blue-5;

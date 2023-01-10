@@ -3,13 +3,17 @@
   cursor: pointer;
   padding: 10px 5px;
   text-align: center;
+  color: $c-tertiary;
+  display: block;
+  text-decoration: none;
 
   .nav-item-icon {
     fill: $c-nav-item-icon;
   }
 }
 
-.custom-nav-item:hover {
+.custom-nav-item:hover,
+.custom-nav-item.active {
   background: $bg-nav-item-hover;
   color: $c-nav-item-hover;
 

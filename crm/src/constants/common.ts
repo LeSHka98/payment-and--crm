@@ -5,6 +5,8 @@ export const PASSPORT_REGEXP = /^[0-9]{2}\s[0-9]{2}\s[0-9]{6}$/gm;
 
 export const PHONE_REGEXP = /^(\+7)\((\d{3})\)(\d{3})-(\d{2})-(\d{2})$/gm;
 
+export const USER_FORM_PHONE_REGEXP = /^(\+)(\d{11})$/gm;
+
 // /^(\+375|80)\((29|25|44|33)\)(\d{3})-(\d{2})-(\d{2})$/gm;
 export const ONLY_LATIN_REGEXP = /^[a-zA-Z]+$/;
 

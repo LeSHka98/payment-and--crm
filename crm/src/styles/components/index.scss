@@ -1,5 +1,8 @@
 @import "Form/formCommon";
 @import "Form/textInput";
+@import "Form/userTextInput";
+@import "Form/userSelect";
+@import "Form/userTextArea";
 @import "Form/dateInputsBlock";
 @import "Form/checkBoxBlock";
 @import "Form/radioGroup";
@@ -7,8 +10,12 @@
 @import "NavPanel/navPanel";
 @import "../objects/wrapper";
 @import "shared/breadcrumbs";
-@import "Filters/filters";
-@import "ClientArea/clientArea";
+@import "Client/filters";
+@import "Client/clientArea";
 @import "shared/pagination";
-@import "ClientArea/table";
-@import "ClientPage/clientInfoPage";
+@import "Client/clientAreaTable";
+@import "Client/clientPage";
+@import "Users/users";
+@import "Users/user";
+@import "Users/userForm";
+@import "Users/userCreateEdit";

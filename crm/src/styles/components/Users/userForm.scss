@@ -1,0 +1,36 @@
+.user-form-title-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .user-form-buttons {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.user-form-loader {
+  left: calc(50% - 24px);
+  margin: 150px auto;
+  position: absolute;
+  z-index: 1100;
+}
+
+.user-form-modal {
+  background: $shadow-primary;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.user-form-modal-disabled {
+  display: none;
+}
+
+.user-form-controls-block {
+  border-right: 1px solid $c-secondary;
+  padding-right: 20px;
+}

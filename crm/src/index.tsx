@@ -13,6 +13,7 @@ import { token } from 'constants/graphql';
 import { saveToLocalStorage } from 'helpers/localStorage';
 // styles
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 import 'index.css';
 
 saveToLocalStorage('token', token);

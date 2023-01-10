@@ -2,11 +2,15 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 // components
-import ClientArea from 'components/ClientArea';
+import ClientArea from 'components/Client/Clients';
 import ErrorPage from 'components/layout/Pages/ErrorPage';
 import NotFound from 'components/layout/Pages/NotFound';
 import BaseLayout from 'components/layout/BaseLayout';
-import UserInfoPage from 'components/UserInfoPage';
+import ClientInfoPage from 'components/Client/ClientInfoPage';
+import UsersTable from 'components/Users/Table';
+import UserPage from 'components/Users/UserPage';
+import EditUser from 'components/Users/EditUser';
+import CreateUser from 'components/Users/CreateUser';
 // styles
 import 'styles/index.scss';
 
@@ -23,9 +27,29 @@ const Router = () => (
         index
       />
       <Route
-        element={<UserInfoPage />}
+        element={<ClientInfoPage />}
         errorElement={<ErrorPage />}
-        path=":userId"
+        path=":clientId"
+      />
+      <Route
+        element={<UsersTable />}
+        errorElement={<ErrorPage />}
+        path="users"
+      />
+      <Route
+        element={<CreateUser />}
+        errorElement={<ErrorPage />}
+        path="users/create"
+      />
+      <Route
+        element={<UserPage />}
+        errorElement={<ErrorPage />}
+        path="users/:userId"
+      />
+      <Route
+        element={<EditUser />}
+        errorElement={<ErrorPage />}
+        path="users/:userId/edit"
       />
     </Route>
     <Route

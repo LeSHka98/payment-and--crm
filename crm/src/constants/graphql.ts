@@ -65,6 +65,36 @@ export type PersonalData = {
   workPhoneExtension: string,
 };
 
+export type User = {
+  email: string,
+  id: number,
+  lastLoginDate: Date,
+  name: string,
+  role: string,
+  status: string,
+  userId: number,
+};
+
+export type CrmUser = {
+  administratorId?: number | string,
+  userAccountId?: number | string,
+  email: string,
+  firstName: string,
+  internalPhone: string,
+  lastName: string,
+  location: CrmUserLocation,
+  mobilePhone: string,
+  otherInfo: string,
+  role: CrmUserRole,
+  secondName: string,
+  status: CrmUserStatus,
+  __typename?: string,
+};
+
+type CrmUserRole = 'ADMIN' | 'CALL_CENTER' | 'CALL_CENTER_T2';
+type CrmUserStatus = 'ACTIVE' | 'INACTIVE';
+type CrmUserLocation = 'RU';
+
 type PersonalDataWidget = {
   personalData: PersonalData,
 };
@@ -73,14 +103,26 @@ type PassportWidget = {
   passport: Passport,
 };
 
+type UsersWidget = {
+  status: string,
+  total: number,
+  users: User[],
+};
+
 export type MainPage = {
   borrowersWidget: Borrowers,
   passportWidget: PassportWidget,
   personalDataWidget: PersonalDataWidget,
 };
 
+type UserPage = {
+  usersWidget: UsersWidget,
+};
+
 export type CrmGatewayQuery = {
-  mainPage: MainPage
+  mainPage: MainPage,
+  userPage: UserPage,
+  crmUserDataWidget: CrmUser,
 };
 
 export const APPROPRIATE_FIELDS: FilterFieldsType = {
@@ -110,3 +152,21 @@ export type UsersQuery = {
 };
 
 export type FieldForFormat = 'birthday' | 'phone' | 'passport';
+
+export type EditMutation = {
+  updateUser: UpdateUser;
+};
+
+export type UpdateUser = {
+  errors: string[],
+  status: string,
+};
+
+export type CreateMutation = {
+  addUser: AddUser;
+};
+
+export type AddUser = {
+  errors: string[],
+  status: string,
+};

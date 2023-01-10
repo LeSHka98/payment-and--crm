@@ -1,0 +1,14 @@
+.user-textarea-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-user-textarea {
+  @extend %form-control;
+  max-width: 300px;
+}
+
+.form-user-textarea.is-invalid, .was-validated .form-user-textarea:invalid {
+  @extend %form-control-invalid;
+}
